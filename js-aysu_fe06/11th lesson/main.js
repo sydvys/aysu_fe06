@@ -1,23 +1,23 @@
 const text = document.querySelectorAll('button')
 
-text[0].style.backgroundColor = 'gray'
+text[0].style.backgroundColor = '#624eff'
 text[0].onclick = () => {
-    document.body.style.backgroundColor = 'gray'
+    document.body.style.backgroundColor = '#624eff'
 }
 
-text[1].style.backgroundColor = 'red'
+text[1].style.backgroundColor = '#914ee2'
 text[1].onclick = () => {
-    document.body.style.backgroundColor = 'red'
+    document.body.style.backgroundColor = '#914ee2'
 }
 
-text[2].style.backgroundColor = 'blue'
+text[2].style.backgroundColor = '#d24ebb'
 text[2].onclick = () => {
-    document.body.style.backgroundColor = 'blue'
+    document.body.style.backgroundColor = '#d24ebb'
 }
 
-text[3].style.backgroundColor = 'yellow'
+text[3].style.backgroundColor = '#fc466b'
 text[3].onclick = () => {
-    document.body.style.backgroundColor = 'yellow'
+    document.body.style.backgroundColor = '#fc466b'
 }
 
 
