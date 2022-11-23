@@ -1,6 +1,6 @@
 /* .page_container {} */
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ p {
     --background: rgb(122, 87, 93);
 }
 
-#sentModel{
+#sentModel {
     position: absolute;
     top: -60px;
     left: 96px;
@@ -37,7 +37,7 @@ p {
     position: relative;
 }
 
-.chat_bar{
+.chat_bar {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 5px;
@@ -45,7 +45,7 @@ p {
     border-bottom: 1px var(--background) solid;
 }
 
-.dot_container{
+.dot_container {
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -58,13 +58,13 @@ p {
     position: relative;
 }
 
-.dot_container:hover{
+.dot_container:hover {
     background-color: var(--background);
     color: rgb(255, 231, 236);
     cursor: pointer;
 }
 
-.dot_menu{
+.dot_menu {
     position: absolute;
     left: -71px;
     top: 35px;
@@ -74,14 +74,18 @@ p {
     background-color: var(--background);
 }
 
-.close_menu{
-    display: none;
+.dot_menu>button {
+    width: 100%;
+}
+
+.close_menu {
+    display: none !important;
 }
 
 .message_container {
     display: flex;
     flex-direction: column;
-    height:300px; 
+    height: 300px;
     overflow-y: scroll;
 }
 
@@ -131,22 +135,45 @@ p {
     color: rgb(255, 231, 236);
 }
 
+.archive_container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 35vh;
+    overflow-y: scroll;
+    border: 1px solid rgb(255, 231, 236);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(245, 202, 212);
+    position: fixed;
+    right: 420px;
+    top: 132px;
+}
+
+.archiveBtnContainer {
+    align-self: flex-end;
+}
+
+.archive_container>div>h2,
+.archive_container>div>p {
+    margin: 0;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--background); 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--background); 
-  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--background);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background);
+}
