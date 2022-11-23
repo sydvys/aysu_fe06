@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+
+<body>
+
+    <div class="page_container">
+        <div class="chat_window">
+            <div class="chat_bar">
+                <div class="dot_container">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="dot_menu close_menu">
+                        <button id="archive">archive</button>
+                    </div>
+                </div>
+            </div>
+            <div class="message_container" id="messageContainer">
+                <div id="sentModel">sent</div>
+            </div>
+            <div class="input_container">
+                <input type="text" id="message" placeholder="Enter your message">
+                <button id="sendBtn">send</button>
+                <button id="scroleToTop"><i class="fa-solid fa-arrow-up"></i></button>
+                <button id="scroleToBottom"><i class="fa-sharp fa-solid fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
