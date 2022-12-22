@@ -1,0 +1,13 @@
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.darkMode {
+    background-color: black;
+    color: pink;
+}
